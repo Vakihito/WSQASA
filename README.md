@@ -11,8 +11,5 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 ## WSQASA - pipeline
 ![Proposal](/images/WSQASA_pipe.png)
 
-## Results 
-
-<iframe src="https://github.com/Vakihito/WSQASA/blob/main/images/f1_comparison.pdf" frameborder="0"></iframe>
-
-
+## Results
+![Proposal](/images/f1_comp.png)
