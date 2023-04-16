@@ -47,3 +47,11 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 the first script generates the artficial dataset based on the contexts of 1 of the 6 datasets described at the paper, the data from the test set is not used to train the model.
 
 In this case we made available only one train generation script, and only one train pipeline for only one of the folds described at the paper.
+
+## How to run the scripts
+ 1. Install the dependencies from the project, the depencies of the first script is different from the scripts from the others.    
+    1.1. ```pip install requerements_1.txt``` to install the dependencies of the first script
+    1.2. ```pip install requerements_2.txt``` to install the dependencies of the other scripts
+
+ 2. To create data from the dataset just run the first script `1_generate_artificial_dataset_.py` 
+ 3. To run the WSQASA pipeline execute the notebook `WSQASA_tweet_qa.ipynb`
