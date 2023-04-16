@@ -1,5 +1,7 @@
 # Weak supervision for sentiment analisys (WSQASA)
 
+We created this repository for the ICANN conference; here, you will find the scripts we used to develop the WSQASA method and a sample notebook of the fine-tuned model.
+
 - Victor A. K. Tomita (ICMC/USP) | akihito012@usp.br (corresponding author)
 - Ricardo M. Marcacini (ICMC/USP) | ricardo.marcacini@icmc.usp.br
 
