@@ -19,3 +19,27 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 ![Proposal](/images/f1_comp.png)
 
 <p>Comparison chart of the different approaches to the WSQASA, the radius of the bubbles represents the size of the test dataset, while the axis <i>y</i> presents the relative gain of <i>F1</i>, the axis <i>x</i> represents the datasets under analysis and the colors of the bubbles represent the experiments carried out.</p>
+
+## Files 
+
+```bash
+├── data
+│   ├── tweet_qa_train_form.pkl         - tweet qa data
+│   └── tweet_qa_validation_form.pkl    - tweet qa validation data
+├── images
+│   ├── f1_comp.png                             
+│   ├── Paper_Conferencia_Victor_Akihito___ICANN_2023.pdf
+│   └── WSQASA_pipe.png
+├── notebooks
+│   └── WSQASA_tweet_qa.ipynb           - notebook to call the scripts ( from 2* to 5)
+├── README.md
+└── scripts
+    ├── 1_generate_artificial_dataset_.py   - generates the artificial dataset
+    ├── 2_1_similarity_search_answer_test_df.py - filter the train data
+    ├── 2_similarity_search_answers_artificial_df.py - filter the test data
+    ├── 3_training_the_qa_model_on_syntatic_data.py - finetune the model
+    ├── 4_1_run_not_finetuned_model_over_dataset_with_specific_domain.py - run not finetuned over validation data
+    ├── 4_run_model_over_dataset_with_specific_domain.py - run finetuned over validation data
+    ├── 5_compare_performance_of_models.py - check models performance 
+    └── pipe.zip
+```
