@@ -43,3 +43,7 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
     ├── 5_compare_performance_of_models.py - check models performance 
     └── pipe.zip
 ```
+
+the first script generates the artficial dataset based on the contexts of 1 of the 6 datasets described at the paper, the data from the test set is not used to train the model.
+
+In this case we made available only one train generation script, and only one train pipeline for only one of the folds described at the paper.
