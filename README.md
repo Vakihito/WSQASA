@@ -13,5 +13,6 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 
 ## Results 
 
-<iframe src="https://docs.google.com/gview?url=https://path.com/to/your/pdf.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+<iframe src="https://github.com/Vakihito/WSQASA/blob/main/images/f1_comparison.pdf" frameborder="0"></iframe>
+
 
