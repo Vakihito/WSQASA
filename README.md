@@ -1,6 +1,6 @@
-# Weak supervision for sentiment analisys (WSQASA)
+# Weak supervision for sentiment analysis (WSQASA)
 
-We created this repository for the ICANN conference; here, you will find the scripts we used to develop the WSQASA method and a sample notebook of the fine-tuned model.
+We created this repository for the ICANN conference; here, you will find the scripts we used to develop the WSQASA method and a sample notebook of the finetuned model.
 
 - Victor A. K. Tomita (ICMC/USP) | akihito012@usp.br (corresponding author)
 - Ricardo M. Marcacini (ICMC/USP) | ricardo.marcacini@icmc.usp.br
@@ -8,7 +8,7 @@ We created this repository for the ICANN conference; here, you will find the scr
 ## Astract
 ---
 
-The growth of social networks, e-commerce, and journalistic media has resulted in the proliferation of opinions on various topics. Companies and government agencies are interested in understanding their customers' opinions about their products and services. Automatic sentiment analysis methods can be used to extract the general sentiment about a product. However, traditional sentiment analysis methods are inflexible in dealing with human queries, which tend to ask questions. Therefore, question-and-answer (QA) systems for sentiment analysis offer a promising alternative. This paper proposes a new method called Weak Supervision for Question and Answering Sentiment Analysis (WSQASA) that fine-tunes and extracts sentiment through QA models in an unsupervised manner. We investigate question-generation models associated with sentiment filters for weak supervision, generating domain-specific question-and-answer pairs for fine-tuning the QA model. Our method enables the generation of domain-specific question-and-answer pairs for fine-tuning the QA model, which significantly enhances the QA-based sentiment analysis results, even without the usage of labeled data.
+The growth of social networks, e-commerce, and journalistic media has resulted in the proliferation of opinions on various topics. Companies and government agencies are interested in understanding their customers' opinions about their products and services. Automatic sentiment analysis methods can be used to extract the general sentiment about a product. However, traditional sentiment analysis methods are inflexible in dealing with human queries, which tend to ask questions. Therefore, question-and-answer (QA) systems for sentiment analysis offer a promising alternative. This paper proposes a new method called Weak Supervision for Question and Answering Sentiment Analysis (WSQASA) that finetunes and extracts sentiment through QA models in an unsupervised manner. We investigate question-generation models associated with sentiment filters for weak supervision, generating domain-specific question-and-answer pairs for finetuning the QA model. Our method enables the generation of domain-specific question-and-answer pairs for finetuning the QA model, which significantly enhances the QA-based sentiment analysis results, even without the usage of labeled data.
 
 ## WSQASA - pipeline
 ![Proposal](/images/WSQASA_pipe.png)
@@ -39,8 +39,8 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 │   │   ├── Generate artificial dataset.ipynb   - Notebook to use the QG pipeline
 │   │   ├── poetry.lock                         - poetry dependencies to run this notebook
 │   │   └── pyproject.toml                      
-│   ├── Samples of the trained model.ipynb      - Notebook to test a model finetuned via WSQASA, should be uploaded to google colab 
-│   └── WSQASA tweet_qa.ipynb                   - Notebook to run the WSQASA pipeline, should be uploaded to google colab 
+│   ├── Samples of the trained model.ipynb      - Notebook to test a model finetuned via WSQASA, should be uploaded to google collab 
+│   └── WSQASA tweet_qa.ipynb                   - Notebook to run the WSQASA pipeline should be uploaded to google collab 
 ├── README.md
 ├── requirements.txt
 └── scripts - WSQASA scripts
@@ -57,13 +57,13 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 ---
 ### 1. Running the WSQASA pipeline
 
-To run the WSQASA pipline upload the `WSQASA tweet_qa.ipynb` notebook to google colab then run the notebook. This will run the WSQASA pipeline, with the parameters set in the notebook.
+To run the WSQASA pipeline, upload the `WSQASA tweet_qa.ipynb` notebook to google collab, then run the notebook. This will run the WSQASA pipeline with the parameters set in the notebook.
 
-### 2. Simple test of a finetuned WSQASA model
+### 2. A simple test of a finetuned WSQASA model
 
-To have a simple test of a WSQASA finetuned model just upload the `Samples of the trained model.ipynb` notebook to google colab, or click here [![Open All Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18UAi02C9vEo0fMiMEcjnQc-GNfFYyoXa?usp=share_link)
+To test a WSQASA finetuned model, just upload the `Samples of the trained model.ipynb` notebook to google colab, or click here [![Open All Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18UAi02C9vEo0fMiMEcjnQc-GNfFYyoXa?usp=share_link)
 
-### 3. To create syntatic datasets
+### 3. To create synthetic datasets
 
 
 Open the `WSQASA/notebooks/create_synthetic_dataset` and install the dependencies via poetry:
