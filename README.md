@@ -23,35 +23,53 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 ## Files 
 
 ```bash
+.
 ├── data
-│   ├── tweet_qa_train_form.pkl         - tweet qa data
-│   └── tweet_qa_validation_form.pkl    - tweet qa validation data
-├── images
-│   ├── f1_comp.png                             
+│   ├── LID_all_issues.csv      - LID data with all the issues
+│   ├── train_data.pkl          - Train data synthetic dataset create from the QG process over all the datasets
+│   ├── tweet_qa_train_form.pkl - contexts of the train data from the tweet_qa
+│   ├── tweet_qa_train_QG_data.pkl      - synthetic data create via the QG process
+│   └── tweet_qa_validation_form.pkl    - validatio/test data 
+├── images 
+│   ├── f1_comp.png
 │   ├── Paper_Conferencia_Victor_Akihito___ICANN_2023.pdf
 │   └── WSQASA_pipe.png
 ├── notebooks
-│   └── WSQASA_tweet_qa.ipynb           - notebook to call the scripts ( from 2* to 5)
+│   ├── create_synthetic_dataset
+│   │   ├── Generate artificial dataset.ipynb   - Notebook to use the QG pipeline
+│   │   ├── poetry.lock                         - poetry dependencies to run this notebook
+│   │   └── pyproject.toml                      
+│   ├── Samples of the trained model.ipynb      - Notebook to test a model finetuned via WSQASA, should be uploaded to google colab 
+│   └── WSQASA tweet_qa.ipynb                   - Notebook to run the WSQASA pipeline, should be uploaded to google colab 
 ├── README.md
-└── scripts
-    ├── 1_generate_artificial_dataset_.py   - generates the artificial dataset
-    ├── 2_1_similarity_search_answer_test_df.py - filter the train data
-    ├── 2_similarity_search_answers_artificial_df.py - filter the test data
-    ├── 3_training_the_qa_model_on_syntatic_data.py - finetune the model
-    ├── 4_1_run_not_finetuned_model_over_dataset_with_specific_domain.py - run not finetuned over validation data
-    ├── 4_run_model_over_dataset_with_specific_domain.py - run finetuned over validation data
-    ├── 5_compare_performance_of_models.py - check models performance 
+├── requirements.txt
+└── scripts - WSQASA scripts
+    ├── 2_1_similarity_search_answer_test_df.py
+    ├── 2_similarity_search_answers_artificial_df.py
+    ├── 3_training_the_qa_model_on_syntatic_data.py
+    ├── 4_1_run_not_finetuned_model_over_dataset_with_specific_domain.py
+    ├── 4_run_model_over_dataset_with_specific_domain.py
+    ├── 5_compare_performance_of_models.py
     └── pipe.zip
 ```
 
-the first script generates the artficial dataset based on the contexts of 1 of the 6 datasets described at the paper, the data from the test set is not used to train the model.
-
-In this case we made available only one train generation script, and only one train pipeline for only one of the folds described at the paper.
-
 ## How to run the scripts
- 1. Install the dependencies from the project, the depencies of the first script is different from the scripts from the others.    
-    1.1. ```pip install requerements_1.txt``` to install the dependencies of the first script
-    1.2. ```pip install requerements_2.txt``` to install the dependencies of the other scripts
+---
+### 1. Running the WSQASA pipeline
 
- 2. To create data from the dataset just run the first script `1_generate_artificial_dataset_.py` 
- 3. To run the WSQASA pipeline execute the notebook `WSQASA_tweet_qa.ipynb`
+To run the WSQASA pipline upload the `WSQASA tweet_qa.ipynb` notebook to google colab then run the notebook. This will run the WSQASA pipeline, with the parameters set in the notebook.
+
+### 2. Simple test of a finetuned WSQASA model
+
+To have a simple test of a WSQASA finetuned model just upload the `Samples of the trained model.ipynb` notebook to google colab, or click here [![Open All Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18UAi02C9vEo0fMiMEcjnQc-GNfFYyoXa?usp=share_link)
+
+### 3. To create syntatic datasets
+
+
+Open the `WSQASA/notebooks/create_synthetic_dataset` and install the dependencies via poetry:
+
+```shell
+poetry install  
+```
+
+Then you may run the `Generate artificial dataset.ipynb`, this notebook will create a synthetic dataset based on the `tweet_qa_train_from.pkl` data. Please remember that you have to create a kernel to run this notebook.
