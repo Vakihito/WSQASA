@@ -33,7 +33,6 @@ The growth of social networks, e-commerce, and journalistic media has resulted i
 │   └── tweet_qa_validation_form.pkl    - validatio/test data 
 ├── images 
 │   ├── f1_comp.png
-│   ├── Paper_Conferencia_Victor_Akihito___ICANN_2023.pdf
 │   └── WSQASA_pipe.png
 ├── notebooks
 │   ├── create_synthetic_dataset
