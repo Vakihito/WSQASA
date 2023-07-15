@@ -59,7 +59,7 @@ To run the WSQASA pipeline, upload the `WSQASA tweet_qa.ipynb` notebook to googl
 
 ### 2. A simple test of a finetuned WSQASA model
 
-To test a WSQASA finetuned model, just upload the `Samples of the trained model.ipynb` notebook to google colab, or click here [![Open All Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18UAi02C9vEo0fMiMEcjnQc-GNfFYyoXa?usp=share_link)
+A simple test of a finetuned WSQASA model To test a WSQASA finetuned model, just upload the Samples of the trained model.ipynb notebook to google colab, or click here [![Open All Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18UAi02C9vEo0fMiMEcjnQc-GNfFYyoXa?usp=share_link)
 
 ### 3. To create synthetic datasets
 
